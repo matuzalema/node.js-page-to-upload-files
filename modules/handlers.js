@@ -23,6 +23,15 @@ exports.welcome = function(request, response){
 	});
 };
 
+exports.mainCss = function(request, response){
+	console.log("Rozpoczynam obsługe css");
+	fs.readFile('templates/style.css', function(err, html) {
+		response.writeHead(200, {"Content-Type": "text/css, charset=utf-8"});
+		response.write(html);
+		response.end();
+	});
+};
+
 exports.error = function(request, response){
 	console.log("Nie wiem co zrobić");
 	response.write("błąd 404");

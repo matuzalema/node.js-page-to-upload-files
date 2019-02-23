@@ -3,18 +3,18 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Upload files</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="./mainCss">
 </head>
 <body>
 	<h1> Wgraj plik </h1>
 	<form action="/upload" enctype="multipart/form-data" method="post">
-		<!-- <label>Tytuł pliku</label>
-		<input type="text" name="title"> -->
-		<!-- <br> -->
+		<label>Tytuł pliku</label>
+		<input type="text" name="title">
+		<br>
 		<label>Plik</label>
 		<input type="file" name="upload" multiple="multiple">
 		<br>
-		<input type="submit" value="Wyślij">
+		<input type="submit" value="Wyślij" style="background-color:#b400ff8c; border:none; padding:5px 10px; color: white">
 	</form>
 </body>
 </html>
