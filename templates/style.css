@@ -6,7 +6,3 @@ body {
 	line-height: 50px;
 	color: #111111c7;
 };
-
-input[type="file"]{
-	background-color: red;
-}
